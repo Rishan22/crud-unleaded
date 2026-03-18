@@ -2,13 +2,14 @@
 
 Template site generation w/ labels and themes. 
 
-Clone into repository,
+Clone into repository
+and run:
 
-Then run:
 ```
 chmod +x setup.sh
 ./setup.sh
 ```
+
 That's all 🎉
 
 ----
