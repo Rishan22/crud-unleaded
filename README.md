@@ -1,6 +1,8 @@
-# Refinery
+# ◆ CRUD Site Generator 
 
-Generic site generator w/ themes.
+Generic CRUD site w/ themes. 
+
+Clone into repository, run setup.sh. That's all🎉
 
 <!-- BEGIN_SPEC -->
 ```yaml
