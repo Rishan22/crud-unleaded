@@ -5,3 +5,35 @@ banking:
   Definition: product
   Event: transaction
   System: admin
+
+ecommerce:
+  Actor: customer
+  LifecycleObject: order
+  Container: cart
+  Definition: item
+  Event: payment
+  System: admin
+
+healthcare:
+  Actor: patient
+  LifecycleObject: case
+  Container: facility
+  Definition: procedure
+  Event: record
+  System: admin
+
+logistics:
+  Actor: supplier
+  LifecycleObject: shipment
+  Container: warehouse
+  Definition: package
+  Event: tracking
+  System: admin
+
+identity:
+  Actor: user
+  LifecycleObject: session
+  Container: org
+  Definition: role
+  Event: audit
+  System: admin

@@ -8,8 +8,18 @@ themes=yaml.safe_load(open("themes.yaml"))
 cfg=json.load(open("config.json"))
 
 theme=themes[cfg["industry"]]
-
 os.makedirs("dist",exist_ok=True)
+
+items=[]
+for role in spec["entities"]:
+    items.append(f"<li>{theme.get(role,role)}</li>")
+
 logo=gen(cfg["brand"])
 
-open("dist/index.html","w").write("<html><body><h1>"+cfg["brand"]+"</h1>"+logo+"</body></html>")
+html = f"""<html><body>
+<h1>{cfg['brand']}</h1>
+{logo}
+<ul>{''.join(items)}</ul>
+</body></html>"""
+
+open("dist/index.html","w").write(html)
