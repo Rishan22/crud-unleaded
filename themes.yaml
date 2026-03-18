@@ -1,0 +1,7 @@
+banking:
+  Actor: client
+  LifecycleObject: account
+  Container: group
+  Definition: product
+  Event: transaction
+  System: admin

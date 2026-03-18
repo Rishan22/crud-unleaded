@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: python:3-alpine
+    command: python -m http.server 8080
+    volumes:
+      - ./dist:/app
+    working_dir: /app
+    ports:
+      - "8080:8080"
