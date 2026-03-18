@@ -1,8 +1,18 @@
 # ◆ CRUD Site Generator 
 
-Generic CRUD site w/ themes. 
+Template site generation w/ labels and themes. 
 
-Clone into repository, run setup.sh. That's all🎉
+Clone into repository,
+
+Then run:
+```
+chmod +x setup.sh
+./setup.sh
+```
+That's all 🎉
+
+----
+### Blueprint:
 
 <!-- BEGIN_SPEC -->
 ```yaml
